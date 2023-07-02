@@ -1,11 +1,11 @@
 public class PGStudent extends Student {
     private String specialization;
-    private String pgDegree;
+    private final String ugDegree;
 
     public PGStudent(String usn, String name, String special, String pgDeg){
         super(usn, name);
         specialization = special;
-        pgDegree = pgDeg;
+        ugDegree = pgDeg;
     }
 
     public String getSpecialization() {
@@ -16,11 +16,11 @@ public class PGStudent extends Student {
         this.specialization = specialization;
     }
 
-    public String getPgDegree() {
-        return pgDegree;
+    public String getugDegree() {
+        return ugDegree;
     }
 
-    public void setPgDegree(String pgDegree) {
-        this.pgDegree = pgDegree;
+    public void setugDegree(String pgDegree) {
+        System.out.println("UG Degree can only be set once!!");
     }
 }
